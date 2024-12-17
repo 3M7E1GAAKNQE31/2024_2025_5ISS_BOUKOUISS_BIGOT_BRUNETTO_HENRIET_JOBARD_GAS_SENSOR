@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ea7ae1577210131f",
+        "type": "ui_chart",
+        "z": "cd404a1aaa31ac01",
+        "name": "",
+        "group": "e2c8389964476b77",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Measured tension from the gas sensor",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "300",
+        "ymax": "400",
+        "removeOlder": "100",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 770,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e2c8389964476b77",
+        "type": "ui_group",
+        "name": "DashboardGroup",
+        "tab": "8a84924861333935",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8a84924861333935",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

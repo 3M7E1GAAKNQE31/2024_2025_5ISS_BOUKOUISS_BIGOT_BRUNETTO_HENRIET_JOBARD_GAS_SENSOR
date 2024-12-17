@@ -17,7 +17,7 @@ TheThingsNetwork ttn(loraSerial, debugSerial, freqPlan);
 
 
 const char *appEui = "0004A30B002159CA";
-const char *appKey = "8d1630b9b6db6270fa1ae3268e610842";
+const char *appKey = "8d1630b9b6db6270fa1ae3268e610842";//"469f56274c4527be611be70a53bab737";//"8d1630b9b6db6270fa1ae3268e610842";
 int val = 0;
 
 void setup()
@@ -52,9 +52,9 @@ void loop()
   payload[1] = val & 0xFF;
   ttn.sendBytes(payload, sizeof(payload));
 
-  debugSerial.print("print payload");
+  debugSerial.print("print payload: ");
   debugSerial.print(payload[0]);
-  debugSerial.print(payload[0]);
-  delay(1000);
+  debugSerial.println(payload[1]);
+  delay(2500);
   
   }
