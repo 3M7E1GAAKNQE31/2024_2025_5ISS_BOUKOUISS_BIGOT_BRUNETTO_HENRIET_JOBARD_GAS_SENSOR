@@ -25,8 +25,10 @@ In this folder you will find:
 
 ## Images:
 
-![The nodes that compose our program](https://github.com/3M7E1GAAKNQE31/2024_2025_5ISS_BOUKOUISS_BIGOT_BRUNETTO_HENRIET_JOBARD_GAS_SENSOR/partie_nodered/pictures/nodered_nodes.JPG)
-The nodes that compose our program
+<i>The nodes that compose our program</i>  
+<img src="./pictures/nodered_nodes.JPG" height="250">
+<br>
+<br>
 
-![The graph with the measurement from our nodered UI](https://github.com/3M7E1GAAKNQE31/2024_2025_5ISS_BOUKOUISS_BIGOT_BRUNETTO_HENRIET_JOBARD_GAS_SENSOR/partie_nodered/pictures/ui_measurements.JPG)
-The graph with the measurement from our nodered UI
+<i>The graph with the measurement from our nodered UI</i>  
+<img src="./pictures/ui_measurements.JPG" height="250">
