@@ -1,9 +1,9 @@
 # Node Red section
 
 In this folder you will find:
-- node-red: A version of nodered with all appropriate dependencies (mainly ui)
 - nodes.json: The nodered programme that you can import to have an overview of the measures of our device
 - pictures: A folder with the pictures used for this README file
+- README.md: The text you are currently reading that explains how to deploy the nodered program
 
 ## How to use:
 
