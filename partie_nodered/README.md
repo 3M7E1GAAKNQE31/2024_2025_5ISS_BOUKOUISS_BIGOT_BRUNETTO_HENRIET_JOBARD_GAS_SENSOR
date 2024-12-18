@@ -9,12 +9,14 @@ In this folder you will find:
 
 1. Ensure you have npm installed  
 2. Following the installation from [node-red git repository](https://github.com/node-red/node-red), open a console and enter the following commands in order:
+   ```
         git clone https://github.com/node-red/node-red.git
         cd node-red
         npm install
         npm run build
         npm i node-red-dashboard
         npm start
+   ```
 3. Go on ```http://127.0.0.1:1880/```
 4. Import nodes.json that can be found in the current folder
 5. Deploy using the upper-right button
