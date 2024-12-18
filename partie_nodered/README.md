@@ -7,14 +7,18 @@ In this folder you will find:
 
 ## How to use:
 
-1. Ensure you have npm installed  
-2. Make sure the arduino board is properly transmitting to chirpstack
-3. Open a terminal in the folder node-red  
-4. Update the dependencies using ```npm install```  
-5. Build the code ```npm run build``` 
-6. Run ```npm start``` 
-7. In your browser, go to the dashboard with the url ```http://127.0.0.1:1880/ui/```
-8. If nothing can be seen, you might need to use the button dpeloy in the upper right corner at ```http://127.0.0.1:1880/```
+1. Follow the installation steps to install nodered from this [git repository](https://github.com/node-red/node-red)
+2. Install nodered dashboard following [this tutoriel](https://flows.nodered.org/node/node-red-dashboard)
+3. Ensure you have npm installed  
+4. Make sure the arduino board is properly transmitting to chirpstack
+5. Open a terminal in the folder node-red  
+6. Update the dependencies using ```npm install```  
+7. Build the code ```npm run build``` 
+8. Run ```npm start``` 
+9. Go on ```http://127.0.0.1:1880/```
+10.Import nodes.json that can be found in the current folder
+11. Deploy using the upper-right button
+12. Go to the dashboard with the url ```http://127.0.0.1:1880/ui/```
 
 ## Images:
 
