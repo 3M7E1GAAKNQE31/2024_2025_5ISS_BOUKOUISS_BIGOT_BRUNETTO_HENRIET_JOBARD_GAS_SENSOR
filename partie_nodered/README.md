@@ -12,9 +12,9 @@ In this folder you will find:
    ```
         git clone https://github.com/node-red/node-red.git
         cd node-red
+        npm i node-red-dashboard
         npm install
         npm run build
-        npm i node-red-dashboard
         npm start
    ```
 3. Go on ```http://127.0.0.1:1880/```
