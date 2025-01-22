@@ -2,14 +2,14 @@
 
 <!--Install library TheThingsNetwork to compile-->
 
-# LoRa Communication
+## LoRa Communication
 
 
-# MQTT Communication
+## MQTT Communication
 <!--Chirpstack blabla-->
 
 
-# Display the measured data
+## Display the measured data
 Once the data was gathered on Chripstack, we wanted to subscribe and be able to see the data as they get measured.
 To proceed, we were able to use two development tools to create user interfaces that would properly work with an MQTT communication: NodeRed and MIT App Inventor.
 
@@ -33,4 +33,4 @@ We were able to create a web interface subscribed to the MQTT broker, displaying
 We first had a small introduction by having a led turning on and off using LoRa.
 We then tried to create an interface to display the evolution of the resistance, meaning of the state of the air, through a live graph.
 
-# PCB
+## PCB
