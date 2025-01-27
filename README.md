@@ -5,6 +5,18 @@
 The objective of the course integrate the sensor design and build at AIME with different wireless protocols, including LoRa IoT protocol, but also nodered and Buetooth via an android application. A work has also be done do have adapt the gas sensor signal, witha  trans impedance amplidfier, and also a didecated shield to plug into the arduino board, to have a fully compact and easy to use system. However, we have not been able to treat much the data, to have a more intelligent system.
 
 
+   <img src="./pictures/setup.jpg" height="200">
+<i>The nodes that compose our program</i> 
+<br>
+
+   <img src="./pictures/setup_1.jpg" height="200">
+<i>The nodes that compose our program</i> 
+<br>
+
+
+
+
+
 ## LTSpice Simulation
 
 To use our sensor with the arduino board we need first to adapt the signal in order to make it readable for the arduino.This is the objective of this part with LTSpice, adapt the signal within a trans impedance amplifier with multiple filters too. With the sensor we designed at AIME, we are dealing with very low currents and, therefore, very high resistances. This is quite challenging to achieve and often requires expensive equipment. That is why, during the practical sessions, we tried to overcome this difficulty, with a first study of possibilities.
@@ -16,10 +28,53 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
 	- Filter (active): to filter frequencies at the output of the operational amplifier and the ADC to satisfy the Shannon condition
 
 
-1. Analysis of the trans impedance amplier characteristics 
+1. Analysis of the trans impedance amplier characteristics
+
+   <img src="./pictures/ltspice_trans_impedance_amplifier.png" height="200">
+<i>The nodes that compose our program</i> 
+<br>
+
+  <img src="./pictures/ltspice_trans_impedance_amplifier_bode.png" height="200">
+<i>The nodes that compose our program</i> 
+<br>
+
+  <img src="./pictures/ltspice_trans_impedance_amplifier_fc1.png" height="200">
+<i>The nodes that compose our program</i> 
+<br>
+
+  <img src="./pictures/ltspice_trans_impedance_amplifier_fc2.png" height="200">
+<i>The nodes that compose our program</i> 
+<br>
+
+  <img src="./pictures/ltspice_trans_impedance_amplifier_fc3.png" height="200">
+<i>The nodes that compose our program</i> 
+<br>
+
+  <img src="./pictures/ltspice_fc_table.PNG" height="200">
+<i>The nodes that compose our program</i> 
+<br>
 
 
-2. Modelisation and simulation of the gas sensor in LtSpice
+
+
+  <img src="ltspice_trans_impedance_amplifier.png" height="200">
+<i>The nodes that compose our program</i> 
+<br>
+
+
+
+3. Modelisation and simulation of the gas sensor in LtSpice
+
+ <img src="./pictures/ltspice_sensor_model.png" height="200">
+<i>The nodes that compose our program</i> 
+<br>
+
+ <img src="./pictures/ltspice_sensor_model_bode.png" height="200">
+<i>The nodes that compose our program</i> 
+<br>
+
+
+
 
 
 ## LoRa Communication and MQTT model
@@ -40,12 +95,18 @@ We first identify the microchip references with the arduino code provided above,
 
 
 
+ <img src="./pictures/microschip_device_info_serial_monitor..png" height="200">
+<i>The nodes that compose our program</i> 
+<br>
+
+
 Once we were connected, we were abl to send packet to the gateway, and see the data  on both of the arduino serial window, and on the chirpstack panel deidcated to use the sensor. We also have on the below image, the link with the nodered website, receiving the data too.
 
  	XXX PHOTO SCREE?SHOT ARDUINO/CHIRP/NODERED XXX
 
   
   XXX liste onfiguration et connexion avec chirpstack XXX
+  
 
 
   XXX SCREEN NODRED ARDUINO LORA XXX
@@ -80,6 +141,14 @@ We first had a small introduction by having a led turning on and off using this 
 
 
 	XXX img envoie serial arudino XXX
+
+ <img src="./pictures/arduino_sending_data_to_app_inventor.png" height="200">
+<i>The nodes that compose our program</i> 
+<br>
+
+ <img src="./pictures/app_inventor_receiving_data.PNG" height="200">
+<i>The nodes that compose our program</i> 
+<br>
 
 
 	XXX img reception app inventor XXX
