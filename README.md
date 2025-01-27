@@ -5,11 +5,13 @@
 The objective of the course integrate the sensor design and build at AIME with different wireless protocols, including LoRa IoT protocol, but also nodered and Buetooth via an android application. A work has also be done do have adapt the gas sensor signal, witha  trans impedance amplidfier, and also a didecated shield to plug into the arduino board, to have a fully compact and easy to use system. However, we have not been able to treat much the data, to have a more intelligent system.
 
    <div align="center">
+	   
    <img src="./pictures/setup.jpg" height="200">
    <i>Board setup</i> 
    <br>
 
    <div align="center">
+	   
    <img src="./pictures/setup_1.jpg" height="200">
    <i>Board Connection</i> 
    <br>
@@ -29,36 +31,42 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
 1. Analysis of the trans impedance amplier characteristics
 
   <div align="center">
+	  
   <img src="./pictures/ltspice_trans_impedance_amplifier.png" height="200">
   <i>Ltspice transimpedance circuit</i> 
   <br>
 
 
   <div align="center">
+	  
   <img src="./pictures/ltspice_trans_impedance_amplifier_bode.png" height="200">
   <i>Bode diagram of the transimpedance circuit</i> 
   <br>
 
 
   <div align="center">
+	  
   <img src="./pictures/ltspice_trans_impedance_amplifier_fc1.png" height="200">
   <i>Identification of the first cutoff frequency</i> 
   <br>
 
 
   <div align="center">
+	  
   <img src="./pictures/ltspice_trans_impedance_amplifier_fc2.png" height="200">
   <i>Identification of the second cutoff frequency</i> 
   <br>
 
    
   <div align="center">
+	  
   <img src="./pictures/ltspice_trans_impedance_amplifier_fc3.png" height="200">
   <i>Identification of the third cutoff frequency</i> 
   <br>
 
 
   <div align="center">
+	  
   <img src="./pictures/ltspice_fc_table.PNG" height="200">
   <i>Cutoff table recap</i> 
   <br>
@@ -70,12 +78,14 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
 3. Modelisation and simulation of the gas sensor in LtSpice
 
  <div align="center">
+	 
  <img src="./pictures/ltspice_sensor_model.png" height="200">
  <i>Inetgration of the sensor model in the previous model</i> 
  <br>
 
 
  <div align="center">
+	 
  <img src="./pictures/ltspice_sensor_model_bode.png" height="400">
  <i>Bode diagram of the complet system</i> 
  <br>
@@ -102,6 +112,7 @@ We first identify the microchip references with the arduino code provided above,
 
 
  <div align="center">
+	 
  <img src="./pictures/microschip_device_info_serial_monitor..png" height="400">
  <i>Device informations of the microchip device</i> 
  <br>
@@ -125,11 +136,13 @@ Through it's ui add-on, it is possible to make simple interfaces.
 We were able to create a web interface subscribed to the MQTT broker, displaying the sensor's data.
 
 <div align="center">
+	
 <img src="./partie_nodered/pictures/nodered_nodes.JPG" height="400">
 <i>The nodes that compose our program</i> 
 <br>
 <br>
 <div align="center">
+	
 <img src="./partie_nodered/pictures/ui_measurements.JPG" height="200">
 <i>The graph with the measurement from our nodered UI</i>  
 
@@ -143,11 +156,13 @@ We first had a small introduction by having a led turning on and off using this 
 
 
  <div align="center">
+	 
  <img src="./pictures/arduino_sending_data_to_app_inventor.png" height="200">
  <i>Data send to the smartphone</i> 
  <br>
 
  <div align="center">
+	 
  <img src="./pictures/app_inventor_receiving_data.PNG" height="400">
  <i>Data received on the application</i> 
  <br>
