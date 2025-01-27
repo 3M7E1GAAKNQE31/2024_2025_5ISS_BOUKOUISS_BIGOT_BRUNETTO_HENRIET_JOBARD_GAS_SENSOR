@@ -61,7 +61,7 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
  <i>Inetgration of the sensor model in the previous model</i> 
  <br>
 
- <img src="./pictures/ltspice_sensor_model_bode.png" height="200">
+ <img src="./pictures/ltspice_sensor_model_bode.png" height="400">
  <i>Bode diagram of the complet system</i> 
  <br>
 
@@ -87,7 +87,7 @@ We first identify the microchip references with the arduino code provided above,
 
 
 
- <img src="./pictures/microschip_device_info_serial_monitor..png" height="200">
+ <img src="./pictures/microschip_device_info_serial_monitor..png" height="400">
  <i>Device informations of the microchip device</i> 
  <br>
 
@@ -109,7 +109,7 @@ NodeRed is a low-code programming tool.
 Through it's ui add-on, it is possible to make simple interfaces.
 We were able to create a web interface subscribed to the MQTT broker, displaying the sensor's data.
 
-<img src="./partie_nodered/pictures/nodered_nodes.JPG" height="200">
+<img src="./partie_nodered/pictures/nodered_nodes.JPG" height="400">
 <i>The nodes that compose our program</i> 
 <br>
 <br>
@@ -130,7 +130,7 @@ We first had a small introduction by having a led turning on and off using this 
  <i>Data send to the smartphone</i> 
  <br>
 
- <img src="./pictures/app_inventor_receiving_data.PNG" height="200">
+ <img src="./pictures/app_inventor_receiving_data.PNG" height="400">
  <i>Data received on the application</i> 
  <br>
 
