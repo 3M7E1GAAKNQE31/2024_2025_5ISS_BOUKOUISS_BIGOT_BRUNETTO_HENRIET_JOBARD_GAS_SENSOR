@@ -56,13 +56,14 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
   <img src="./pictures/ltspice_trans_impedance_amplifier_fc2.png" height="200">
   <i>Identification of the second cutoff frequency</i> 
   <br>
-
+  </p>
    
   <div align="center">
 	  
   <img src="./pictures/ltspice_trans_impedance_amplifier_fc3.png" height="200">
   <i>Identification of the third cutoff frequency</i> 
   <br>
+  </p>
 
 
   <div align="center">
@@ -70,7 +71,7 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
   <img src="./pictures/ltspice_fc_table.PNG" height="200">
   <i>Cutoff table recap</i> 
   <br>
-
+  </p>
 
 
 
@@ -78,10 +79,10 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
 3. Modelisation and simulation of the gas sensor in LtSpice
 
  <div align="center">
-	 
  <img src="./pictures/ltspice_sensor_model.png" height="200">
  <i>Inetgration of the sensor model in the previous model</i> 
- <br>
+ <br> 
+ </p>
 
 
  <div align="center">
@@ -89,6 +90,7 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
  <img src="./pictures/ltspice_sensor_model_bode.png" height="400">
  <i>Bode diagram of the complet system</i> 
  <br>
+ </p>
 
 
 
@@ -111,12 +113,11 @@ We first identify the microchip references with the arduino code provided above,
 	DevEUI: 0004A30B002159CA
 
 
- <div align="center">
-	 
+ <div align="center">	 
  <img src="./pictures/microschip_device_info_serial_monitor..png" height="400">
  <i>Device informations of the microchip device</i> 
  <br>
-
+ </p>
 
 Once we were connected, we were abl to send packet to the gateway, and see the data  on both of the arduino serial window, and on the chirpstack panel deidcated to use the sensor. We also have on the below image, the link with the nodered website, receiving the data too.
 
@@ -136,15 +137,16 @@ Through it's ui add-on, it is possible to make simple interfaces.
 We were able to create a web interface subscribed to the MQTT broker, displaying the sensor's data.
 
 <div align="center">
-	
 <img src="./partie_nodered/pictures/nodered_nodes.JPG" height="400">
 <i>The nodes that compose our program</i> 
 <br>
 <br>
 <div align="center">
+</p>
 	
 <img src="./partie_nodered/pictures/ui_measurements.JPG" height="200">
 <i>The graph with the measurement from our nodered UI</i>  
+</p>
 
 
 ### MIT App Inventor
@@ -160,12 +162,13 @@ We first had a small introduction by having a led turning on and off using this 
  <img src="./pictures/arduino_sending_data_to_app_inventor.png" height="200">
  <i>Data send to the smartphone</i> 
  <br>
+ </p>
 
- <div align="center">
-	 
+ <div align="center"> 
  <img src="./pictures/app_inventor_receiving_data.PNG" height="400">
  <i>Data received on the application</i> 
  <br>
+ </p>
 
 
 
