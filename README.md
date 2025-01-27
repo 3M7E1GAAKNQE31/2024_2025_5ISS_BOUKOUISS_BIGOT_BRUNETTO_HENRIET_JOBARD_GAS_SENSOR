@@ -148,6 +148,13 @@ We were able to create a web interface subscribed to the MQTT broker, displaying
 </p>
 
 
+ <p div align="center">
+ <img src="./pictures/full.png" height="400">
+ <i>Bode diagram of the complet system</i> 
+ <br>
+ </p>
+
+
 ### MIT App Inventor
 
 In addition to the MQTT and Node-RED components, we included a section in the Arduino code to communicate the gas sensor information to a phone. To achieve this, we used App Inventor for designing the mobile application. The two tabs, "Design" and "Blocks," allowed us to create an application easily and fairly quickly for receiving the sensor's value.
