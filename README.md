@@ -4,15 +4,17 @@
 
 The objective of the course integrate the sensor design and build at AIME with different wireless protocols, including LoRa IoT protocol, but also nodered and Buetooth via an android application. A work has also be done do have adapt the gas sensor signal, witha  trans impedance amplidfier, and also a didecated shield to plug into the arduino board, to have a fully compact and easy to use system. However, we have not been able to treat much the data, to have a more intelligent system.
 
-   <div align="center">
+   <p div align="center">
    <img src="./pictures/setup.jpg" height="200">
    <i>Board setup</i> 
    <br>
+   </p>
 
-   <div align="center">
+   <p div align="center">
    <img src="./pictures/setup_1.jpg" height="200">
    <i>Board Connection</i> 
    <br>
+   </p>
 
 
 ## LTSpice Simulation
@@ -32,18 +34,21 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
   <img src="./pictures/ltspice_trans_impedance_amplifier.png" height="200">
   <i>Ltspice transimpedance circuit</i> 
   <br>
+  </p>
 
 
   <div align="center">
   <img src="./pictures/ltspice_trans_impedance_amplifier_bode.png" height="200">
   <i>Bode diagram of the transimpedance circuit</i> 
   <br>
+  </p>
 
 
   <div align="center"> 
   <img src="./pictures/ltspice_trans_impedance_amplifier_fc1.png" height="200">
   <i>Identification of the first cutoff frequency</i> 
   <br>
+  </p>
 
 
   <div align="center">
