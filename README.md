@@ -31,11 +31,11 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
 
 1. Analysis of the trans impedance amplier characteristics
 
-  <p div align="center">
-  <img src="./pictures/ltspice_trans_impedance_amplifier.png" height="200">
-  <i>Ltspice transimpedance circuit</i> 
-  <br>
-  </p>
+<p div align="center">
+<img src="./pictures/ltspice_trans_impedance_amplifier.png" height="200">
+<i>Ltspice transimpedance circuit</i> 
+<br>
+</p>
 
 
   <p div align="center">
