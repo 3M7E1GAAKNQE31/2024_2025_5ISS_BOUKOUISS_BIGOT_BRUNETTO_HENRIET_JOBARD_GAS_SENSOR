@@ -30,7 +30,14 @@ To do, we used the chirpstack website in order to connect the gateway to within 
 
 We first identify the microchip references with the arduino code provided above, and set up these parameters on the chirpsatck website, and with the eduroam wifi connection : https://srv-chirpstack.insa-toulouse.fr/#/regions
 
-  XXX PHOTO PARAMETRES XXX
+	const char *appEui = "0004A30B002159CA";
+	const char *appKey = "8d1630b9b6db6270fa1ae3268e610842";
+
+	EUI: 0004A30B002159CA
+	Battery: 3953
+	AppEUI: 0004A30B002159CA
+	DevEUI: 0004A30B002159CA
+
 
 
 Once we were connected, we were abl to send packet to the gateway, and see the data  on both of the arduino serial window, and on the chirpstack panel deidcated to use the sensor. We also have on the below image, the link with the nodered website, receiving the data too.
