@@ -35,6 +35,7 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
 
 <p div align="center">
 <img src="./pictures/ltspice_trans_impedance_amplifier.png" height="200">
+<br>
 <i>Ltspice transimpedance circuit</i> 
 <br>
 </p>
@@ -44,6 +45,7 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
 
   <p div align="center">
   <img src="./pictures/ltspice_trans_impedance_amplifier_bode.png" height="200">
+  <br>
   <i>Bode diagram of the transimpedance circuit</i> 
   <br>
   </p>
@@ -53,6 +55,7 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
 
   <p div align="center"> 
   <img src="./pictures/ltspice_trans_impedance_amplifier_fc1.png" height="200">
+  <br>
   <i>Identification of the first cutoff frequency</i> 
   <br>
   </p>
@@ -62,6 +65,7 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
 
   <p div align="center">  
   <img src="./pictures/ltspice_trans_impedance_amplifier_fc2.png" height="200">
+  <br>
   <i>Identification of the second cutoff frequency</i> 
   <br>
   </p>
@@ -70,6 +74,7 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
    
   <p div align="center">  
   <img src="./pictures/ltspice_trans_impedance_amplifier_fc3.png" height="200">
+  <br>
   <i>Identification of the third cutoff frequency</i> 
   <br>
   </p>
@@ -79,6 +84,7 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
 
   <p div align="center">
   <img src="./pictures/ltspice_fc_table.PNG" height="200">
+  <br>
   <i>Cutoff table recap</i> 
   <br>
   </p>
@@ -90,8 +96,9 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
 
 
  <p div align="center">
- <img src="./pictures/ltspice_sensor_model.png" height="200">
- <i>Inetgration of the sensor model in the previous model</i> 
+ <img src="./pictures/ltspice_sensor_model.png" height="200"> 
+ <br>
+ <i>Integration of the sensor model in the previous model</i> 
  <br> 
  </p>
 
@@ -100,6 +107,7 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
 
  <p div align="center">
  <img src="./pictures/ltspice_sensor_model_bode.png" height="400">
+ <br>
  <i>Bode diagram of the complet system</i> 
  <br>
  </p>
@@ -128,6 +136,7 @@ We first identify the microchip references with the arduino code provided above,
 
  <p div align="center">	 
  <img src="./pictures/microschip_device_info_serial_monitor..png" height="400">
+ <br>
  <i>Device informations of the microchip device</i> 
  <br>
  </p>
@@ -155,6 +164,7 @@ We were able to create a web interface subscribed to the MQTT broker, displaying
 
 <p div align="center">
 <img src="./partie_nodered/pictures/nodered_nodes.JPG" height="400">
+<br>
 <i>The nodes that compose our program</i> 
 <br>
 <br>
@@ -164,6 +174,7 @@ We were able to create a web interface subscribed to the MQTT broker, displaying
 
 <p div align="center">	
 <img src="./partie_nodered/pictures/ui_measurements.JPG" height="200">
+<br>
 <i>The graph with the measurement from our nodered UI</i>  
 </p>
 
@@ -188,12 +199,14 @@ We first had a small introduction by having a led turning on and off using this 
 
  <p div align="center">	 
  <img src="./pictures/arduino_sending_data_to_app_inventor.png" height="200">
+ <br>
  <i>Data send to the smartphone</i> 
  <br>
  </p>
 
  <p div align="center"> 
  <img src="./pictures/app_inventor_receiving_data.PNG" height="400">
+ <br>
  <i>Data received on the application</i> 
  <br>
  </p>
