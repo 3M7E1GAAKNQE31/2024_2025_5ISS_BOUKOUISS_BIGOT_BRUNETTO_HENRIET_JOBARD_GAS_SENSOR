@@ -1,8 +1,8 @@
 # 2024_2025_5ISS_BOUKOUISS_BIGOT_BRUNETTO_HENRIET_JOBARD_GAS_SENSOR
 
-<!--Install library TheThingsNetwork to compile-->
+## Introduction
 
-intro : objective of the course : integrate the sensor design and build at AIME with different wireless protocols, including LoRa IoT protocol, but also nodered and Buetooth via an android application. A work has also be done do have adapt the gas sensor signal, witha  trans impedance amplidfier, and also a didecated shield to plug into the arduino board, to have a fully compact and easy to use system. However, we have not been able to treat much the data, to have a more intelligent system.
+The objective of the course integrate the sensor design and build at AIME with different wireless protocols, including LoRa IoT protocol, but also nodered and Buetooth via an android application. A work has also be done do have adapt the gas sensor signal, witha  trans impedance amplidfier, and also a didecated shield to plug into the arduino board, to have a fully compact and easy to use system. However, we have not been able to treat much the data, to have a more intelligent system.
 
 
 ## LTSpice Simulation
@@ -22,7 +22,7 @@ A first solution is to use a direct transimpedance amplifier, but this has a hig
 2. Modelisation and simulation of the gas sensor in LtSpice
 
 
-## LoRa Communication
+## LoRa Communication and MQTT model
 
 This was for us the first time we used LoRa protocol in a concrete project, wich motivate us even more. The idea is to first connected the gas sensor to the arduino borard, with the objective to send its values to the LoRa gateway place on the rootop of the GEI.
 
@@ -44,9 +44,6 @@ Once we were connected, we were abl to send packet to the gateway, and see the d
   XXX SCREEN NODRED ARDUINO LORA XXX
 
 
-
-## MQTT Communication
-<!--Chirpstack blabla-->
 
 
 ## Display the measured data
