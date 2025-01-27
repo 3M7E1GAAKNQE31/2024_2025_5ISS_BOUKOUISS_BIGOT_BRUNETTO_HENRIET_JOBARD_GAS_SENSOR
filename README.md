@@ -4,7 +4,7 @@
 
 The objective of the course integrate the sensor design and build at AIME with different wireless protocols, including LoRa IoT protocol, but also nodered and Buetooth via an android application. A work has also be done do have adapt the gas sensor signal, witha  trans impedance amplidfier, and also a didecated shield to plug into the arduino board, to have a fully compact and easy to use system. However, we have not been able to treat much the data, to have a more intelligent system.
 
-   <p align="center">
+   <p div align="center">
    <img src="./pictures/setup.jpg" height="200">
    <figcaption><i>Board setup</i></figcaption>
    <br>
