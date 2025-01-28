@@ -226,9 +226,43 @@ Another additional feature we could have explored is phone communication, such a
 
 ## Integration of our gas sensor from AIME ##
 
+The detailed specifications of our gas sensor can be found in the datasheet. To integrate our gas sensor into the existing monitoring solution with LoRa and Node-RED, replacing the commercial MQ-3B sensor, we will need to follow a series of steps.
+
+Our sensor operates passively, with gas presence detected through changes in its resistance. The sensor will be powered and controlled via an Arduino Uno, and its data will be retrieved using the ADC (Analog-to-Digital Converter).
+
+### Transimpedance amplifier
+
+The first step in processing sensor data is using a transimpedance amplifier to shape the signal for detection by the Arduino's ADC. This stage includes three low-pass filters with the following cut-off frequencies and functions:
+
+Filter 1: 16Hz – designed to minimize noise from the sensor.
+Filter 2: 1.6Hz – aims to eliminate 50Hz noise.
+Filter 3: 1.6kHz – adjusts the signal for compatibility with the Arduino's ADC.
+This circuit was simulated in LTSpice to evaluate the performance of the filters and the transimpedance amplifier.
+
+The transimpedance amplifier is shown in the following image.
+
  <p div align="center"> 
  <img src="C:\Users\Samia\Desktop\Sensors\amplif.PNG" height="400">
  <br>
  <i>Data received on the application</i> 
  <br>
  </p>
+
+ ### Digital potentiometer
+
+ 
+We use a digital potentiometer as a variable resistor, specifically the MCP41100. This component operates at 5V and is controlled by the Arduino through SPI using three pins: Clock, MOSI, and CS.
+
+The schematic for this component is shown in the following image.
+
+### Heating resistor controlled via PWM
+
+Our sensor is a "smart sensor," featuring a heating resistor (a polysilicon resistor) and a temperature sensor (an aluminum resistor). The heating resistor is controlled by the Arduino via PWM, which is facilitated by the following setup using an IRF540N transistor.
+
+### Sensor connections
+
+We have designed a symbol for our sensor in KiCad. The symbol is linked to the Package_TO_SOT_THT:TO-5-10 footprint, which is used for mounting our sensor.
+
+The schematic of the sensor connections is shown below.
+
+
