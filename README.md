@@ -244,16 +244,18 @@ The transimpedance amplifier is shown in the following image.
  <p div align="center"> 
  <img src="C:\Users\Samia\Desktop\Sensors\amplif.PNG" height="400">
  <br>
- <i>Data received on the application</i> 
+ <i>transimpedance amplifier stage</i> 
  <br>
  </p>
 
  ### Digital potentiometer
-
  
 We use a digital potentiometer as a variable resistor, specifically the MCP41100. This component operates at 5V and is controlled by the Arduino through SPI using three pins: Clock, MOSI, and CS.
 
 The schematic for this component is shown in the following image.
+
+
+
 
 ### Heating resistor controlled via PWM
 
