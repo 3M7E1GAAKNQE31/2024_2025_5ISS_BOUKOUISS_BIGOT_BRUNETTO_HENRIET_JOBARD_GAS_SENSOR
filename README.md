@@ -256,7 +256,7 @@ We use a digital potentiometer as a variable resistor, specifically the MCP41100
 The schematic for this component is shown in the following image.
 
  <p div align="center"> 
- <img src="./pictures/Var_res.PNG" height="400">
+ <img src="./pictures/Var_res.png" height="400">
  <br>
  <i>Montage for the digital potentiometer</i> 
  <br>
@@ -268,7 +268,7 @@ The schematic for this component is shown in the following image.
 Our sensor is a "smart sensor," featuring a heating resistor (a polysilicon resistor) and a temperature sensor (an aluminum resistor). The heating resistor is controlled by the Arduino via PWM, which is facilitated by the following setup using an IRF540N transistor.
 
  <p div align="center"> 
- <img src="./pictures/PWM.PNG" height="400">
+ <img src="./pictures/PWM.png" height="400">
  <br>
  <i>PWM montage with transistor</i> 
  <br>
@@ -281,7 +281,7 @@ We have designed a symbol for our sensor in KiCad. The symbol is linked to the P
 The schematic of the sensor connections is shown below.
 
  <p div align="center"> 
- <img src="./pictures/Sensor.PNG" height="400">
+ <img src="./pictures/Sensor.png" height="400">
  <br>
  <i>Our gas sensor connections</i> 
  <br>
