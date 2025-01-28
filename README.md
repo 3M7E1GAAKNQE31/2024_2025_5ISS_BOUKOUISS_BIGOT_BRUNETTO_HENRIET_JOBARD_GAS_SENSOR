@@ -234,9 +234,9 @@ Our sensor operates passively, with gas presence detected through changes in its
 
 The first step in processing sensor data is using a transimpedance amplifier to shape the signal for detection by the Arduino's ADC. This stage includes three low-pass filters with the following cut-off frequencies and functions:
 
-Filter 1: 16Hz – designed to minimize noise from the sensor.<br>
+Filter 1: 15Hz – designed to minimize noise from the sensor.<br>
 Filter 2: 1.6Hz – aims to eliminate 50Hz noise.<br>
-Filter 3: 1.6kHz – adjusts the signal for compatibility with the Arduino's ADC.<br>
+Filter 3: 1.5,7kHz – adjusts the signal for compatibility with the Arduino's ADC.<br>
 
 This circuit was simulated in LTSpice to evaluate the performance of the filters and the transimpedance amplifier.
 
