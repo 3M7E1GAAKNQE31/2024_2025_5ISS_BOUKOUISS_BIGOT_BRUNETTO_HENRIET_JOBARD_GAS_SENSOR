@@ -234,9 +234,9 @@ Our sensor operates passively, with gas presence detected through changes in its
 
 The first step in processing sensor data is using a transimpedance amplifier to shape the signal for detection by the Arduino's ADC. This stage includes three low-pass filters with the following cut-off frequencies and functions:
 
-Filter 1: 16Hz – designed to minimize noise from the sensor.
-Filter 2: 1.6Hz – aims to eliminate 50Hz noise.
-Filter 3: 1.6kHz – adjusts the signal for compatibility with the Arduino's ADC.
+Filter 1: 16Hz – designed to minimize noise from the sensor.<br>
+Filter 2: 1.6Hz – aims to eliminate 50Hz noise.<br>
+Filter 3: 1.6kHz – adjusts the signal for compatibility with the Arduino's ADC.<br>
 This circuit was simulated in LTSpice to evaluate the performance of the filters and the transimpedance amplifier.
 
 The transimpedance amplifier is shown in the following image.
@@ -261,10 +261,14 @@ The schematic for this component is shown in the following image.
 
 Our sensor is a "smart sensor," featuring a heating resistor (a polysilicon resistor) and a temperature sensor (an aluminum resistor). The heating resistor is controlled by the Arduino via PWM, which is facilitated by the following setup using an IRF540N transistor.
 
+
+
 ### Sensor connections
 
 We have designed a symbol for our sensor in KiCad. The symbol is linked to the Package_TO_SOT_THT:TO-5-10 footprint, which is used for mounting our sensor.
 
 The schematic of the sensor connections is shown below.
+
+
 
 
