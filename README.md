@@ -245,7 +245,7 @@ The transimpedance amplifier is shown in the following image.
  <p div align="center"> 
  <img src="./pictures/amplif.png" height="400">
  <br>
- <i>transimpedance amplifier stage</i> 
+ <i>Transimpedance amplifier stage</i> 
  <br>
  </p>
 
@@ -293,8 +293,12 @@ The schematic of the sensor connections is shown below.
 To get an overview of our electronic schematic, here is an image that illustrates all of our components.
 
  <p div align="center"> 
- <img src="./pictures/Schema_global.PNG" height="400">
+ <img src="./pictures/Schema_global.png" height="400">
  <br>
  <i>Our electronic schematic</i> 
  <br>
  </p>
+
+ ## Conclusion ##
+
+This project provided a comprehensive introduction to the world of sensors, covering everything from fabrication to data integration on user-friendly dashboards. We were able to develop and strengthen skills in various areas such as LoRa communication and Node-RED applications.
