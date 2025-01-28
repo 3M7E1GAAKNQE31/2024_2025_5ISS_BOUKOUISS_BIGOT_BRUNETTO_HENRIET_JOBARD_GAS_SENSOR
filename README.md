@@ -243,7 +243,7 @@ This circuit was simulated in LTSpice to evaluate the performance of the filters
 The transimpedance amplifier is shown in the following image.
 
  <p div align="center"> 
- <img src="./pictures/amplif.PNG" height="400">
+ <img src="./pictures/amplif.png" height="400">
  <br>
  <i>transimpedance amplifier stage</i> 
  <br>
