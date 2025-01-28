@@ -224,6 +224,11 @@ Another additional feature we could have explored is phone communication, such a
 
 
 
-## PCB ##
+## Integration of our gas sensor from AIME ##
 
-cf samia
+ <p div align="center"> 
+ <img src="C:\Users\Samia\Desktop\Sensors\amplif.PNG" height="400">
+ <br>
+ <i>Data received on the application</i> 
+ <br>
+ </p>
