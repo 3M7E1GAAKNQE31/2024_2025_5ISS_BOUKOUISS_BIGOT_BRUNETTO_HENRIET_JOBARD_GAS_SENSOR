@@ -18,107 +18,11 @@ The objective of the course integrate the sensor design and build at AIME with d
    <span><i>Board Connection</i></span>
    <br>
    </p>
-
-
-## LTSpice Simulation
-
-To use our sensor with the arduino board we need first to adapt the signal in order to make it readable for the arduino.This is the objective of this part with LTSpice, adapt the signal within a trans impedance amplifier with multiple filters too. With the sensor we designed at AIME, we are dealing with very low currents and, therefore, very high resistances. This is quite challenging to achieve and often requires expensive equipment. That is why, during the practical sessions, we tried to overcome this difficulty, with a first study of possibilities.
-
-A first solution is to use a direct transimpedance amplifier, but this has a high resistance, is expensive, and is not as precise as desired. Another possibility is to cascade two amplifiers with a bias resistor. The only issue in this case is the energy consumption of the amplifiers, as they are active components. The chosen solution is the use of an amplifier whose only difficulty is that it does not excessively amplify the offset voltage. The LTC1050C meets this condition. It is in fact a trans impedance amplifier. Next, the proposal is to apply different filters:
-
-	- Low-pass filter (passive): to filter high-frequency noise from the sensor
-	- Filter (active): to filter ambient 50Hz noise and noise from the amplifier
-	- Filter (active): to filter frequencies at the output of the operational amplifier and the ADC to satisfy the Shannon condition
-
-
-1. Analysis of the trans impedance amplier characteristics
-
-<p div align="center">
-<img src="./pictures/ltspice_trans_impedance_amplifier.png" height="200">
-<br>
-<i>Ltspice transimpedance circuit</i> 
-<br>
-</p>
-
-
-
-
-  <p div align="center">
-  <img src="./pictures/ltspice_trans_impedance_amplifier_bode.png" height="200">
-  <br>
-  <i>Bode diagram of the transimpedance circuit</i> 
-  <br>
-  </p>
-
-
-
-
-  <p div align="center"> 
-  <img src="./pictures/ltspice_trans_impedance_amplifier_fc1.png" height="200">
-  <br>
-  <i>Identification of the first cutoff frequency</i> 
-  <br>
-  </p>
-
-
-
-
-  <p div align="center">  
-  <img src="./pictures/ltspice_trans_impedance_amplifier_fc2.png" height="200">
-  <br>
-  <i>Identification of the second cutoff frequency</i> 
-  <br>
-  </p>
-
-
    
-  <p div align="center">  
-  <img src="./pictures/ltspice_trans_impedance_amplifier_fc3.png" height="200">
-  <br>
-  <i>Identification of the third cutoff frequency</i> 
-  <br>
-  </p>
-
-
-
-
-  <p div align="center">
-  <img src="./pictures/ltspice_fc_table.PNG" height="200">
-  <br>
-  <i>Cutoff table recap</i> 
-  <br>
-  </p>
-
-
-
-
-2. Modelisation and simulation of the gas sensor in LtSpice
-
-
- <p div align="center">
- <img src="./pictures/ltspice_sensor_model.png" height="200"> 
- <br>
- <i>Integration of the sensor model in the previous model</i> 
- <br> 
- </p>
-
-
-
-
- <p div align="center">
- <img src="./pictures/ltspice_sensor_model_bode.png" height="400">
- <br>
- <i>Bode diagram of the complet system</i> 
- <br>
- </p>
-
-
-
-
 
 ## LoRa Communication and MQTT model
 
-This was for us the first time we used LoRa protocol in a concrete project, wich motivate us even more. The idea is to first connected the gas sensor to the arduino borard, with the objective to send its values to the LoRa gateway place on the rootop of the GEI.
+This was for us the first time we used LoRa protocol in a concrete project, wich motivate us even more. The idea is to first connected the gas sensor to the arduino board, with the objective to send its values to the LoRa gateway place on the rootop of the GEI.
 
 To do, we used the chirpstack website in order to connect the gateway to within the microchip radio device, that is wired to the arduino.
 
@@ -240,7 +144,63 @@ Filter 3: 1.5,7kHz – adjusts the signal for compatibility with the Arduino's A
 
 This circuit was simulated in LTSpice to evaluate the performance of the filters and the transimpedance amplifier.
 
-The transimpedance amplifier is shown in the following image.
+
+To use our sensor with the arduino board we need first to adapt the signal in order to make it readable for the arduino.This is the objective of this part with LTSpice, adapt the signal within a trans impedance amplifier with multiple filters too. With the sensor we designed at AIME, we are dealing with very low currents and, therefore, very high resistances. This is quite challenging to achieve and often requires expensive equipment. That is why, during the practical sessions, we tried to overcome this difficulty, with a first study of possibilities.
+
+A first solution is to use a direct transimpedance amplifier, but this has a high resistance, is expensive, and is not as precise as desired. Another possibility is to cascade two amplifiers with a bias resistor. The only issue in this case is the energy consumption of the amplifiers, as they are active components. The chosen solution is the use of an amplifier whose only difficulty is that it does not excessively amplify the offset voltage. The LTC1050C meets this condition. It is in fact a trans impedance amplifier. Next, the proposal is to apply different filters:
+
+	- Low-pass filter (passive): to filter high-frequency noise from the sensor
+	- Filter (active): to filter ambient 50Hz noise and noise from the amplifier
+	- Filter (active): to filter frequencies at the output of the operational amplifier and the ADC to satisfy the Shannon condition
+
+
+Here are the following simulations in LTspice for our Analysis of the trans impedance amplifier : 
+
+<p div align="center">
+<img src="./pictures/ltspice_trans_impedance_amplifier.png" height="200">
+<br>
+<i>Ltspice transimpedance circuit</i> 
+<br>
+</p>
+
+  <p div align="center">
+  <img src="./pictures/ltspice_trans_impedance_amplifier_bode.png" height="200">
+  <br>
+  <i>Bode diagram of the transimpedance circuit</i> 
+  <br>
+  </p>
+
+  <p div align="center"> 
+  <img src="./pictures/ltspice_trans_impedance_amplifier_fc1.png" height="200">
+  <br>
+  <i>Identification of the first cutoff frequency</i> 
+  <br>
+  </p>
+
+  <p div align="center">  
+  <img src="./pictures/ltspice_trans_impedance_amplifier_fc2.png" height="200">
+  <br>
+  <i>Identification of the second cutoff frequency</i> 
+  <br>
+  </p>
+   
+  <p div align="center">  
+  <img src="./pictures/ltspice_trans_impedance_amplifier_fc3.png" height="200">
+  <br>
+  <i>Identification of the third cutoff frequency</i> 
+  <br>
+  </p>
+
+  <p div align="center">
+  <img src="./pictures/ltspice_fc_table.PNG" height="200">
+  <br>
+  <i>Cutoff table recap</i> 
+  <br>
+  </p>
+
+
+
+The transimpedance amplifier in the schematic diagram of Kicad is shown in the following image.
 
  <p div align="center"> 
  <img src="./pictures/amplif.png" height="400">
