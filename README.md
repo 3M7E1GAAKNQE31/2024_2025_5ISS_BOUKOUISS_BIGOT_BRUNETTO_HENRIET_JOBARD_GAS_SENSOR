@@ -2,8 +2,7 @@
 
 ## Introduction
 
-The objective of the course integrate the sensor design and build at AIME with different wireless protocols, including LoRa IoT protocol, but also nodered and Buetooth via an android application. A work has also be done do have adapt the gas sensor signal, witha  trans impedance amplidfier, and also a didecated shield to plug into the arduino board, to have a fully compact and easy to use system. However, we have not been able to treat much the data, to have a more intelligent system.
-
+The objective of the course is integrate the sensor design and build at AIME with different wireless protocols, including LoRa IoT protocol, but also nodered and Buetooth via an android application. A work has also be done do have adapt the gas sensor signal, with a  trans impedance amplidfier, and also a dedicated shield, to plug into the arduino board, to have a fully compact and easy to use system. However, we have not been able to treat much the data, to have a more intelligent system. The board set up and connections are show in the next pictures.
 
    <p div align="center">
    <img src="./pictures/setup.png" height="400">
@@ -36,8 +35,6 @@ We first identify the microchip references with the arduino code provided above,
 	AppEUI: 0004A30B002159CA
 	DevEUI: 0004A30B002159CA
 
-
-
  <p div align="center">	 
  <img src="./pictures/microschip_device_info_serial_monitor..png" height="400">
  <br>
@@ -45,9 +42,7 @@ We first identify the microchip references with the arduino code provided above,
  <br>
  </p>
 
- 
-
-Once we were connected, we were abl to send packet to the gateway, and see the data  on both of the arduino serial window, and on the chirpstack panel deidcated to use the sensor. We also have on the below image, the link with the nodered website, receiving the data too.
+Once we were connected, we were able to send packet to the gateway, and see the data  on both of the arduino serial window, and on the chirpstack panel dedicated to use the sensor. We also have on the below image, the link with the nodered website, receiving the data too.
 
 
 
@@ -63,7 +58,7 @@ To proceed, we were able to use two development tools to create user interfaces 
 NodeRed is a low-code programming tool. 
 Through it's ui add-on, it is possible to make simple interfaces.
 We were able to create a web interface subscribed to the MQTT broker, displaying the sensor's data.
-
+The next pictures show the results we obtained.
 
 
 <p div align="center">
@@ -74,15 +69,11 @@ We were able to create a web interface subscribed to the MQTT broker, displaying
 <br>
 </p>
 
-
-
 <p div align="center">	
 <img src="./partie_nodered/pictures/ui_measurements.JPG" height="200">
 <br>
 <i>The graph with the measurement from our nodered UI</i>  
 </p>
-
-
 
 
  <p div align="center">
@@ -98,8 +89,7 @@ We were able to create a web interface subscribed to the MQTT broker, displaying
 In addition to the MQTT and Node-RED components, we included a section in the Arduino code to communicate the gas sensor information to a phone. To achieve this, we used App Inventor for designing the mobile application. The two tabs, "Design" and "Blocks," allowed us to create an application easily and fairly quickly for receiving the sensor's value.
 
 <b>MIT App Inventor</b> is a free online tool offering a user friendly interface for android application development. 
-We first had a small introduction by having a led turning on and off using this tool
-
+We first had a small introduction by having a led turning on and off using this tool, and then developed a code to send the data from the gas sensor to the smartphone.
 
  <p div align="center">	 
  <img src="./pictures/arduino_sending_data_to_app_inventor.png" height="200">
@@ -115,15 +105,11 @@ We first had a small introduction by having a led turning on and off using this 
  <br>
  </p>
 
-
-
 Due to a lack of time, we were unable to go beyond the simple transmission of data to the smartphone. However, this still allowed us to explore Bluetooth communication between the Arduino and the smartphone.
 
 As an improvement, we considered implementing a graphical representation with real-time updates of the gas level. Although we attempted it, we were not able to successfully implement this functionality. We then tried to create an interface to display the evolution of the resistance, meaning of the state of the air, through a live graph.
 
 Another additional feature we could have explored is phone communication, such as sending an SMS when the gas level goes above or below a certain threshold, to explore another communication protocol.
-
-
 
 
 
