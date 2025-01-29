@@ -12,7 +12,7 @@ The objective of the course is integrate the sensor design and build at AIME wit
    </p>
 
    <p div align="center">
-   <img src="./pictures/setup_1.png" height="200">
+   <img src="./pictures/setup_2.png" height="200">
    <br>   
    <span><i>Board Connection</i></span>
    <br>
@@ -62,7 +62,7 @@ The next pictures show the results we obtained.
 
 
 <p div align="center">
-<img src="./partie_nodered/pictures/nodered_nodes.JPG" height="400">
+<img src="./pictures/nodered_nodes.JPG" height="400">
 <br>
 <i>The nodes that compose our program</i> 
 <br>
@@ -70,7 +70,7 @@ The next pictures show the results we obtained.
 </p>
 
 <p div align="center">	
-<img src="./partie_nodered/pictures/ui_measurements.JPG" height="200">
+<img src="./pictures/ui_measurements.JPG" height="200">
 <br>
 <i>The graph with the measurement from our nodered UI</i>  
 </p>

@@ -26,9 +26,9 @@ In this folder you will find:
 ## Images:
 
 <i>The nodes that compose our program</i>  
-<img src="./pictures/nodered_nodes.JPG" height="250">
+<img src="../pictures/nodered_nodes.JPG" height="250">
 <br>
 <br>
 
 <i>The graph with the measurement from our nodered UI</i>  
-<img src="./pictures/ui_measurements.JPG" height="250">
+<img src="../pictures/ui_measurements.JPG" height="250">
