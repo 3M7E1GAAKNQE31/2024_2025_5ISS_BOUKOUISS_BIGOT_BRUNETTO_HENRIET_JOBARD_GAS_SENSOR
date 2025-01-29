@@ -12,7 +12,7 @@ The objective of the course is integrate the sensor design and build at AIME wit
    </p>
 
    <p div align="center">
-   <img src="./pictures/setup_2.png" height="200">
+   <img src="./pictures/setup_2.png" height="400">
    <br>   
    <span><i>Board Connection</i></span>
    <br>
